@@ -72,3 +72,7 @@ Procedure binary_search
    
 end procedure
 ```
+
+#### Dijkstra’s Algorithm
+Is an algorithm for finding the shortest path between nodes in a graph. It can also be used for finding the shortest paths from a single node to a single destination node by stopping the algorithm once the shortest path to the destination node has been determined.
+
