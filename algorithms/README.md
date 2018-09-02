@@ -35,6 +35,8 @@ Step 6: Print Element x Found at index i and go to step 8
 Step 7: Print element not found
 Step 8: Exit
 ```
+##### Code
+https://github.com/andela-oawofadeju/assessment-doc-/blob/master/algorithms/linear_search.rb
 
 ### Binary Search
 It is a half-interval search algorithm that overcomes the limitation of sequential search. Precondition to use binary search is that the array must be sorted. Search the sorted array by repeatedly dividing the interval into half. Approximate middle element of the array is located and its value is compared to element to be searched. If the value of middle element is greater than the element to be searched, then we would search the left portion of the array i.e from the beginning of the array to (mid-1) position of array and if the value of middle element is less than the element to be searched, then we would search element in the right position of the array i.e from mid+1 position of array to end position.
@@ -72,13 +74,15 @@ Procedure binary_search
    
 end procedure
 ```
+##### Code
+https://github.com/andela-oawofadeju/assessment-doc-/blob/master/algorithms/binary_search.rb
 
 ## Common sorting Algorithms
 ### Bubble Sort
 It is a simple sorting algorithm and sometimes referred to as sinking sort. This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order. This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n2) where n is the number of items. Bubble sort is a pretty fun and easy sorting algorithm. For each pass through an array of values, each value is compared to its adjacent value and swapped into the correct order and so on. Bubble sort can be practical if the input is in mostly sorted order with some out-of-order elements nearly in position.
 
 #### Analysis
-Bubble sort has a worst-case and average complexity of О(n2), where n is the number of items being sorted. Most practical sorting algorithms have substantially better worst-case or average complexity, often O(n log n). Even other О(n2) sorting algorithms, such as insertion sort, generally run faster than bubble sort, and are no more complex. Therefore, bubble sort is not a practical sorting algorithm.
+Bubble sort has a worst-case and average complexity of О(n^2), where n is the number of items being sorted. Most practical sorting algorithms have substantially better worst-case or average complexity, often O(n log n). Even other О(n^2) sorting algorithms, such as insertion sort, generally run faster than bubble sort, and are no more complex. Therefore, bubble sort is not a practical sorting algorithm.
 
 #### Pseudocode for Bubble Sort
 ```
@@ -97,6 +101,8 @@ procedure bubbleSort( A : list of sortable items )
   until not swapped
 end procedure
 ```
+##### Code
+https://github.com/andela-oawofadeju/assessment-doc-/blob/master/algorithms/bubble_sort.rb
 
 ### Insertion Sort
 This is an in-place comparison-based sorting algorithm. Here, a sub-list is maintained which is always sorted. For example, the lower part of an array is maintained to be sorted. An element which is to be inserted in this sorted sub-list, has to find its appropriate place and then it has to be inserted there.
@@ -138,6 +144,8 @@ procedure insertionSort( A : array of items )
 	
 end procedure
 ```
+##### Code
+https://github.com/andela-oawofadeju/assessment-doc-/blob/master/algorithms/insertion_sort.rb
 
 ### Merge Sort
 Merge sort is s an efficient, general-purpose, comparison-based sorting algorithm based on divide and conquer technique. With worst-case time complexity being Ο(n log n), it is one of the most respected algorithms. Merge sort first divides the array into equal halves and then combines them in a sorted manner. Most implementations produce a stable sort, which means that the implementation preserves the input order of equal elements in the sorted output.
@@ -156,9 +164,11 @@ algorithm mergesort(A, lo, hi) is
         join
         merge(A, lo, mid, hi)
 ```
+##### Code
+https://github.com/andela-oawofadeju/assessment-doc-/blob/master/algorithms/merge_sort.rb
 
 ### Selection Sort
-Selection sort is a sorting algorithm specifically an in-place comparison sort in which the list is divided into two parts, the sorted part at the left end and the unsorted part at the right end. Initially, the sorted part is empty and the unsorted part is the entire list.. It has 0(n2) time complexity, making it inefficient on large lists, and generally performs worse than the similar insertion sort. The smallest element is selected from the unsorted array and swapped with the leftmost element, and that element becomes a part of the sorted array. This process continues moving unsorted array boundary by one element to the right.
+Selection sort is a sorting algorithm specifically an in-place comparison sort in which the list is divided into two parts, the sorted part at the left end and the unsorted part at the right end. Initially, the sorted part is empty and the unsorted part is the entire list.. It has 0(n^2) time complexity, making it inefficient on large lists, and generally performs worse than the similar insertion sort. The smallest element is selected from the unsorted array and swapped with the leftmost element, and that element becomes a part of the sorted array. This process continues moving unsorted array boundary by one element to the right.
 
 #### Algorithm
 ```
@@ -195,6 +205,8 @@ procedure selection sort
 	
 end procedure
 ```
+##### Code
+https://github.com/andela-oawofadeju/assessment-doc-/blob/master/algorithms/selection_sort.rb
 
 #### Dijkstra’s Algorithm
 Is an algorithm for finding the shortest path between nodes in a graph. It can also be used for finding the shortest paths from a single node to a single destination node by stopping the algorithm once the shortest path to the destination node has been determined.
