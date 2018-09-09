@@ -1,4 +1,4 @@
-# Time Complexity: worst case and average case = 0(n^2); best case = O(n)
+# Time Complexity: worst case and average case = O(n^2); best case = O(n) except when mostly sorted, worst case and average case= O(nlogn)
 
 def bubble_sort(array)
   return array if array.size <= 1

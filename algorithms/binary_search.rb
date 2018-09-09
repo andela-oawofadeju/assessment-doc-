@@ -1,4 +1,4 @@
-# Time Complexity = 0(logn) 
+# Time Complexity = O(logn) 
 # Precondition: List should be sorted
 
 def binary_search(array, number)
@@ -9,7 +9,7 @@ def binary_search(array, number)
   n.times do |i|
     if array[mid] == number
       return mid
-    elsif array[mid] > key
+    elsif array[mid] > number
       high = mid - 1
     else
       low = mid + 1
@@ -17,3 +17,4 @@ def binary_search(array, number)
   end
   return -1
 end
+

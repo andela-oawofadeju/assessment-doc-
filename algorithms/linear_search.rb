@@ -1,4 +1,4 @@
-# Time Complexity: worst case and average case = 0(n); best case = O(1)
+# Time Complexity: worst case and average case = O(n); best case = O(1)
 
 def linear_search(array, number)
   x = array.length
